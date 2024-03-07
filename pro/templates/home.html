@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cards:</h1>
+    <nav style="display: flex; justify-content: space-evenly; align-items: center;">
+        <ul style="list-style: none;">
+          {%for card in cards%}  
+            <h5>Name:{{card.name}}</h5>
+            <p>text:{{card.text}}</p>
+          {%endfor%}  
+        </ul>
+    </nav>
+</body>
+</html>
